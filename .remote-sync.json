@@ -1,0 +1,19 @@
+{
+  "logger": {
+    "title": "Remote Sync"
+  },
+  "uploadOnSave": true,
+  "useAtomicWrites": false,
+  "deleteLocal": false,
+  "hostname": "157.230.158.100",
+  "port": "22",
+  "target": "/var/www/html/von",
+  "ignore": [
+    ".remote-sync.json",
+    ".git/**"
+  ],
+  "username": "root",
+  "keyfile": "C:\\Users\\tpeterson\\Documents\\vpkey.ppk",
+  "watch": [],
+  "transport": "scp"
+}

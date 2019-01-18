@@ -1,0 +1,91 @@
+.btn {
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.10);
+
+    &.btn-flat {
+        box-shadow: none;
+    }
+    &.btn-light {
+        color: $dark;
+        background: $white;
+        border-color: $white;
+        transition: all .25s ease;
+
+        &:hover{
+            background-color: darken($white, 0%);
+            border-color: darken($white, 0%);
+            box-shadow: 0 2px 15px 0 rgba(0,0,0,0.15);
+        }
+    }
+    &.btn-primary {
+        color: $white;
+    }
+}
+
+.btn-group.btn-flat .btn{
+    box-shadow: none;
+}
+
+.badge-muted {
+
+    &.badge-danger,
+    &.badge-success,
+    &.badge-warning,
+    &.badge-info {
+        padding: 5px 8px;
+        font-weight: normal;
+        font-size: 10px;
+        text-transform: uppercase;
+        border-radius: 2px;
+    }
+
+    &.badge-success {
+        color: #679b53;
+        background-color: #ebffe2;
+    }
+    &.badge-danger {
+        background-color: #ffc2c8;
+        color: #c62231;
+    }
+    &.badge-warning {
+        background-color: #fff3d1;
+        color: #977a24;
+    }
+    &.badge-info {
+        background-color: #c8f2ff;
+        color: #1b72aa;
+    }
+}
+
+// Status circles
+.status-circle {
+    display:inline-block ;
+    border-radius: 100px;
+    height: 8px;
+    width: 8px;
+}
+
+// tooltip links
+a[data-toggle=tooltip],
+.tooltip-item[data-toggle=tooltip] {
+    border-bottom: 1px dotted $gray-800;
+    text-decoration: none;
+    cursor: pointer;
+}
+a.disabled:not(.btn) {
+    opacity: 0.65;
+}
+
+// external links
+a.external-link {
+    color: $gray-800 !important;
+    border-bottom: 1px dotted $gray-800;
+    text-decoration: none;
+
+    &::after {
+        @extend .far;
+        content: '\f08e';
+        color: $gray-800;
+        padding-left: 4px;
+        font-size: 10px;
+    }
+}

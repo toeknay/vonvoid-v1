@@ -1,0 +1,35 @@
+.navbar{
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.05);
+    .navbar-toggler {
+        border: 0;
+    }
+
+    // Center logo on mobile
+    @media (max-width: 991.98px){
+        .navbar-header{
+            z-index: 2; // ensure nav is above logo_container
+        }
+        .logo_container {
+            position: absolute;
+            top:.5rem; // same as container padding
+            left: 0;
+            right: 0;
+            text-align: center;
+            z-index: 1;
+        }
+    }
+    .navbar-brand img {
+        max-width: 143px;
+    }
+    .pro-badge {
+        color: $white;
+        background-color: $primary;
+        font-size: 10px;
+        padding: .3em .4em .2em;
+        vertical-align: middle;
+    }
+}
+
+.upgrade_notice {
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.08);
+}

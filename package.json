@@ -1,0 +1,48 @@
+{
+  "name": "project-client",
+  "version": "1.0.0",
+  "description": "Project client server and frontend",
+  "author": "Jeremy Abraham <jeremy@paperplanehq.com>",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.3.1",
+    "@nuxtjs/dotenv": "^1.1.1",
+    "@nuxtjs/proxy": "^1.2.4",
+    "@nuxtjs/sentry": "^1.1.0",
+    "bootstrap-vue": "^2.0.0-rc.11",
+    "chart.js": "^2.7.2",
+    "cookie": "^0.3.1",
+    "cookieparser": "^0.1.0",
+    "dotenv": "^5.0.1",
+    "js-cookie": "^2.2.0",
+    "lodash": "^4.17.10",
+    "moment": "^2.22.2",
+    "moment-timezone": "^0.5.20",
+    "node-sass": "^4.9.0",
+    "nuxt": "^1.0.0",
+    "raven": "^2.6.2",
+    "raven-js": "^3.26.3",
+    "sass-loader": "^7.0.3",
+    "vue": "^2.5.16",
+    "vue-chartjs": "^3.3.1",
+    "vue-clipboard2": "^0.2.0",
+    "vue-pell-editor": "^1.0.1",
+    "vue-recaptcha": "^1.1.1",
+    "vuelidate": "^0.7.4"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "eslint": "^4.15.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-vue": "^4.0.0"
+  }
+}

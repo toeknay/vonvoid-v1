@@ -1,0 +1,121 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,600,800);
+
+body{
+    background: #F1F1F3;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.contact_preferences{
+    .sidenav{
+        position: relative;
+        background: #f9f9f9;
+        padding-bottom: 75px;
+
+        .nav{
+            .nav-item{
+                margin:0 -15px;
+                padding-left: 25px;
+
+                a{
+                    color:var(--brand-color);
+                }
+
+                &.active{
+                    background: var(--brand-color);
+
+                    a{
+                        color:#fff;
+                    }
+                }
+            }
+        }
+
+        .powered_by {
+            font-size:12px;
+            position: absolute;
+            bottom:25px;
+            left:10px;
+            right:10px;
+            width: auto;
+            text-align: center;
+
+            i{
+                color: #7ED321;
+                font-size: 14px;
+            }
+        }
+    }
+
+    .btn-primary{
+        background-color: var(--brand-color);
+        border-color: var(--brand-color);
+    }
+
+    h2{
+        font-weight: bold;
+    }
+
+    h5{
+        color: #565656;
+        font-weight: 500;
+    }
+
+    #Notifications{
+        .page-1{
+            fieldset{
+                margin-bottom:25px;
+            }
+            .checkbox_group{
+                padding-bottom: 10px;
+            }
+            label{
+                color: #565656;
+                font-weight: 400;
+                vertical-align: middle;
+                margin-bottom: 0;
+            }
+        }
+        .page-3{
+            margin-top: 50px;
+            margin-bottom: 50px;
+
+            i{
+                font-size: 62px;
+                color: #7ED321;
+                margin-bottom: 35px;
+            }
+        }
+    }
+}
+
+input[type="checkbox"].checkbox {
+    cursor: pointer;
+	-webkit-appearance: none;
+	background-color: #EDEDED;
+	border: 1px solid #E1E1E1;
+	padding: 11px;
+	border-radius: 0px;
+	display: inline-block;
+	position: relative;
+    line-height: 16px;
+    vertical-align: middle;
+
+    &:active, &:checked:active {
+    }
+
+    &:checked {
+    	background-color: #6EBAF6;
+    	border: 1px solid #2097DC;
+    	color: #fff;
+    }
+
+    &:checked:after {
+        @extend .far;
+        content:'\f00c';
+    	font-size: 15px;
+    	position: absolute;
+    	top: 4px;
+    	left: 4px;
+    	color: #fff;
+    }
+}

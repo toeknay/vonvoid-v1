@@ -1,0 +1,12 @@
+.pro_features.text-muted{
+    .plan_feature {
+        color: $gray-500;
+        a[data-toggle="tooltip"]{
+            border-color: $gray-500
+        }
+        i{
+            width:16px;
+            &::before{ content: ''; }
+        }
+    }
+}

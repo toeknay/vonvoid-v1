@@ -1,0 +1,75 @@
+#account_domains {
+    i.delete_domain {
+        cursor: pointer;
+        transition: all .25s ease;
+
+        &:hover {
+            @extend .text-danger;
+        }
+    }
+}
+
+#consent_items {
+    .consent-item {
+        @extend .card;
+
+        position: relative;
+        margin: 10px 0;
+        padding: 15px 20px 15px;
+        cursor: pointer;
+        box-shadow: 0 0 8px 0 rgba(49,49,50,.05);
+        opacity: 0.84;
+        transition: all .25s ease;
+
+        .consent-name {
+            display: block;
+            font-size: 18px;
+            margin-bottom: 0;
+        }
+        .consent-text {
+            display: block;
+            color: $gray-500;
+            padding-left: 19px;
+        }
+        .status-circle{
+            background-color: $gray-300;
+            margin: 0 5px 2px 0;
+        }
+        .badge {
+            @extend .badge-muted;
+
+            font-size: 9px;
+            line-height: .625rem;
+        }
+
+        // Enabled consent consent-item
+        &.enabled {
+            .status-circle{
+                @extend .bg-success;
+            }
+        }
+
+        // Add hover effects
+        &:hover {
+            opacity: 1;
+            box-shadow: 0 0 15px 0 rgba(49,49,50,.10);
+
+            &:after {
+                opacity: 1;
+            }
+        }
+        &:after {
+            @extend .far;
+
+            position: absolute;
+            right:25px;
+            top:32px;
+
+            content: '\f061';
+            color: $primary;
+            font-size: 14px;
+            opacity: 0;
+            transition: opacity .25s ease;
+        }
+    }
+}
