@@ -1,0 +1,32 @@
+.navFollow {
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    left: 0;
+    background-color: $white;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.05);
+
+    &--active {
+        position: fixed;
+        top: 0;
+    }
+
+    &__nav {
+        margin: 0;
+        padding: 25px 0;
+        text-align: center;
+    }
+
+    &__nav_item {
+        margin-left: 15px;
+        list-style: none;
+
+        @include media-breakpoint-up(md) {
+            margin-left: 25px;
+        }
+
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+}

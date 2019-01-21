@@ -1,0 +1,76 @@
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta http-equiv="Content-Security-Policy" content="block-all-mixed-content">
+
+        <title>{{pageTitle}}</title>
+        <meta name="description" content="{{pageDescription}}">
+
+        <link rel="stylesheet" href="/css/style.css?{{version}}">
+
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-NHSR2JS');</script>
+        <!-- End Google Tag Manager -->
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" href="/img/favicons/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="/img/favicons/favicon-16x16.png" sizes="16x16">
+        <!-- <link rel="manifest" href="/img/favicons/manifest.json"> -->
+        <!-- <link rel="mask-icon" href="/img/favicons/safari-pinned-tab.svg" color="#5bbad5"> -->
+        <link rel="icon" href="/img/favicons/favicon.ico">
+        <!-- <meta name="msapplication-config" content="/img/favicons/browserconfig.xml"> -->
+        <meta name="theme-color" content="#ffffff">
+
+        <!--(bake-start _if="siteUrl")-->
+        <meta property="og:url" content="{{siteUrl}}{{pageUrl}}">
+        <!--(bake-end)-->
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="{{pageTitle}}">
+        <!--(bake-start _if="pageSocialImg")-->
+        <meta property="og:image" content="{{siteUrl}}{{pageSocialImg}}">
+        <!--(bake-end)-->
+        <meta property="og:description" content="{{pageDescription}}">
+        <meta property="og:site_name" content="{{pageTitle}}">
+        <meta property="og:locale" content="en_GB">
+
+        <meta name="twitter:card" content="summary_large_image">
+        <!--(bake-start _if="twitterAccount")-->
+        <meta name="twitter:site" content="{{twitterAccount}}">
+        <meta name="twitter:creator" content="{{twitterAccount}}">
+        <!--(bake-end)-->
+        <!--(bake-start _if="siteUrl")-->
+        <meta name="twitter:url" content="{{siteUrl}}{{pageUrl}}">
+        <!--(bake-end)-->
+        <meta name="twitter:title" content="{{pageTitle}}">
+        <meta name="twitter:description" content="{{pageDescription}}">
+        <!--(bake-start _if="pageSocialImg")-->
+        <meta name="twitter:image" content="{{siteUrl}}{{pageSocialImg}}">
+        <!--(bake-end)-->
+
+        <!--(bake-start _if="googlePlusAccount")-->
+        <link href="https://plus.google.com/{{googlePlusAccount}}" rel="publisher">
+        <!--(bake-end)-->
+        <meta itemprop="name" content="{{pageTitle}}">
+        <meta itemprop="description" content="{{pageDescription}}">
+        <!--(bake-start _if="pageSocialImg")-->
+        <meta itemprop="image" content="{{siteUrl}}{{pageSocialImg}}">
+        <!--(bake-end)-->
+
+        <meta name="robots" content="index,follow,noodp">
+        <meta name="googlebot" content="index,follow">
+
+        <meta name="format-detection" content="telephone=no">
+
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    </head>

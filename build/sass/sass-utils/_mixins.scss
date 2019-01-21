@@ -1,0 +1,62 @@
+//------------------------------------
+//    Mixins
+//------------------------------------
+
+
+// PX to REM - Usage: font-size: rem(37px);
+@function rem($px, $base: $base-font-size) {
+    @return ($px / $base) * 1rem;
+}
+
+
+// Vertical Align Anything
+@mixin vertical-align {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+// Input Placeholder
+// Usage:
+// @include input-placeholder {
+//     font-size: 18px;
+// }
+@mixin input-placeholder {
+    &.placeholder {
+        @content;
+    }
+
+    &:-moz-placeholder {
+        @content;
+    }
+
+    &::-moz-placeholder {
+        @content;
+    }
+
+    &:-ms-input-placeholder {
+        @content;
+    }
+
+    &::-webkit-input-placeholder {
+        @content;
+    }
+}
+
+
+// Retina Background Images - Usage: @include background-image-retina(logo, png);
+@mixin background-image-retina($file, $type) {
+    background-image: url($file ) '.' + $type;
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (-moz-min-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+        & {
+            background-image: url($file ) '@2x.' + $type;
+        }
+    }
+}

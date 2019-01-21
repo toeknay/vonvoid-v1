@@ -1,0 +1,84 @@
+.hero {
+    background-image: linear-gradient(-196deg, #4c4cff 2%, #0000ff 100%);
+
+    &__header {
+        padding: 20px 0;
+    }
+
+    &__home {
+        display: block;
+    }
+
+    &__logo {
+        width: 100px;
+    }
+
+    &__nav {
+        margin: 0;
+        padding: 0;
+
+        @media (max-width: 431px) {
+            margin-top: 20px;
+        }
+    }
+
+    &__nav_item {
+        display: inline-block;
+        margin-left: 25px;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        a {
+            color: $white;
+        }
+    }
+
+    &__content {
+        padding: 110px 0 140px;
+        color: $white;
+        text-align: center;
+
+        @include media-breakpoint-down(sm) {
+            padding: 70px 0 90px;
+        }
+    }
+
+    &__content_title {
+        font-weight: $font-weight-bold;
+
+        @include media-breakpoint-down(sm) {
+            font-size: 34px;
+        }
+    }
+
+    &__content_text {
+        max-width: 700px;
+        margin: 0 auto;
+        font-size: 1.625rem;
+
+        @include media-breakpoint-down(sm) {
+            font-size: 1.25rem;
+        }
+    }
+
+    &__content_btn {
+        display: inline-block;
+        position: relative;
+        top: 0;
+        padding: 15px 25px;
+        transition: all 0.2s ease;
+        border-radius: 100px;
+        background: #ffffff;
+        box-shadow: 0 10px 12px 0 rgba(0,0,0,0.10);
+        color: $black;
+
+        &:hover {
+            top: -2px;
+            box-shadow: 0 15px 16px 0 rgba(0,0,0,0.08);
+            color: $black;
+            text-decoration: none;
+        }
+    }
+}
