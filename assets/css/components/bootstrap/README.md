@@ -1,5 +1,0 @@
-# Customizing Bootstrap
-* Bootstrap is a dependency so is install via NPM and is located in the `node_modules` folder.
-* To change change variables in Bootstrap use the file [`components/bootstrap/_variables.scss`](/src/css/components/bootstrap/_variables.scss). When you change a variable make sure to remove the `!default` and add the comment `// Changed` on the line edited, this ensure that it overrides Bootstrap defaults and makes it easy to fined the variables that have been changed.
-* If you need to change any component of Bootstrap do it outside the `node_modules` folder as it will be overwritten on `npm install`, do it in the [`components/bootstrap/`](/src/css/components/bootstrap) folder and name your file according to what you're changing inside Bootstrap e.g `_button-group.scss`.
-* All of this is to ensure that Bootstrap can be updated without losing the custom styles we've created. When updating Bootstrap you must manually merge the new variables file with our custom one (Bootstrap add/remove vars in updates) and ensure that out custom styles are working and merged with the updated one.
