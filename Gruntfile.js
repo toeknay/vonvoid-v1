@@ -60,6 +60,7 @@ module.exports = function( grunt ) {
                     'dist/js/main.min.js': [
                         'build/js/jquery.min.js',
                         'build/js/vendors/**.js',
+                        'build/js/lightgallery/**.js',
                         'build/js/functions.js'
                     ],
                 }

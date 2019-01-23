@@ -2,7 +2,7 @@
 
 This is everything you need to build a static website, using Grunt to compile your HTML, CSS & JS with livereload.
 
-#### Setup
+#### Setup %
 
 - Open terminal, `cd` to where you keep your sites.
 - Clone this repo.
