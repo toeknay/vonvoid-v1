@@ -51,6 +51,7 @@ $(function() {
         }
     });
 });
-lightGallery(document.getElementById('aniimated-thumbnials'), {
-  thumbnail:true
-});
+//lightGallery(document.getElementById('aniimated-thumbnials'), {
+//  thumbnail:true
+//});
+lightGallery(document.getElementById('lightgallery'));
