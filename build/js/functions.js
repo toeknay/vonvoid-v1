@@ -51,6 +51,12 @@ $(function() {
         }
     });
 });
-lightGallery(document.getElementById('animated-thumbnials'), {
-  thumbnail:true
-});
+//lightGallery(document.getElementById('animated-thumbnials'), {
+//  thumbnail:true
+//});
+$(document).ready(function() {
+    $('#lightGallery').lightGallery({
+        showThumbByDefault:true,
+        addClass:'showThumbByDefault'
+    });
+  });
