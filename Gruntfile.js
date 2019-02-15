@@ -59,7 +59,7 @@ module.exports = function( grunt ) {
                 files: {
                     'dist/js/main.min.js': [
                         'build/js/jquery.min.js',
-                        'build/js/vendors/**.js'
+                        'build/js/vendors/**.js',
                         'build/js/functions.js'
                     ],
                 }
@@ -162,4 +162,4 @@ module.exports = function( grunt ) {
     grunt.loadNpmTasks('grunt-browser-sync');
 
     grunt.registerTask('default', ['sync','sass','postcss:dist','svgstore','bake:build','uglify','browserSync','watch']);
-};
+  };

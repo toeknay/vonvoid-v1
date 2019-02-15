@@ -1,13 +1,7 @@
 .section {
     padding: 70px 0;
 
-    &--features {
-        padding-top: 180px;
-    }
 
-    &--how-it-works {
-        background-color: #f8fafb;
-    }
 
     &__intro {
         text-align: center;
@@ -65,19 +59,29 @@
     }
 
 
-    &__learn {
-        text-align: center;
+
+
+
+
+    &__code_block {
+        position: relative;
+        margin: 25px 0;
+        padding-left: 30px;
+
+        h5 {
+            font-size: 18px;
+        }
+
+        i {
+            position: absolute;
+            top: 2px;
+            left: 0;
+            color: $primary;
+            font-size: 18px;
+        }
     }
 
-    &__learn_icon {
-        max-width: 100px;
-        margin: 25px auto;
-    }
-
-
-
-
-    &__cs_info {
+    &__art_block {
         position: relative;
         margin: 25px 0;
         padding-left: 30px;
@@ -96,68 +100,4 @@
     }
 
 
-    &__pricing {
-
-        .btn {
-            border-radius: 2px;
-        }
-    }
-
-    &__pricing_box {
-        margin-top: 25px;
-        padding: 25px 30px;
-        border-radius: 2px;
-        background: $white;
-        box-shadow: 0 2px 15px 0 rgba(0,0,0,0.1);
-
-        &--pro {
-            background-color: $primary;
-        }
-    }
-
-
-
-    // &__pricing_price {
-    //     font-size: 22px;
-    //     font-weight: 700;
-    // }
-
-    &__pricing_list {
-        padding: 0;
-    }
-
-    &__pricing_item {
-        position: relative;
-        margin-top: 10px;
-        padding-left: 25px;
-        list-style: none;
-
-        &:first-child {
-            margin-top: 0;
-        }
-
-        &:before {
-            content: '\f00c';
-            position: absolute;
-            top: 0;
-            left: 0;
-            font-family: 'Font Awesome 5 Pro';
-            font-weight: 300;
-        }
-    }
-
-    &__pricing_block {
-        margin-top: 80px;
-    }
-
-    &__beta_waitlist {
-        input {
-            padding: 0.65rem 1rem;
-            border-color: $primary;
-        }
-    }
-
-    &__pricing_faq {
-        margin: 25px 0;
-    }
 }
