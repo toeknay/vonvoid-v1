@@ -191,13 +191,13 @@ document.addEventListener("keyup", keyUpHandler, false);
     if (level == 0){
       drawStart();
     }
-    if (pause){
+    if (level != 0 && pause){
       drawPause();
     }
-    if (lose){
+    if (level != 0 && lose){
       drawLose();
     }
-    if (win){
+    if (level != 0 && win){
       drawWin();
     }
 
