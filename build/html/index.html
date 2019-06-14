@@ -83,7 +83,29 @@
                         <div class="col-md-8">
                             <p class="[ mb-1 ] [ section__info_sub ]">I made these with some of my friends. We used Cubasis on an iPad</p>
                             <h4>sketches</h4>
-                              <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/798019440&color=%23ff2415&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                              <!-- <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/798019440&color=%23ff2415&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                              -->
+                              <div id="song-player">
+                                  <img amplitude-song-info="cover_art_url" amplitude-main-song-info="true"/>
+                                  <div class="bottom-container">
+                                    <progress class="amplitude-song-played-progress" amplitude-main-song-played-progress="true" id="song-played-progress"></progress>
+                                  </div>
+                                  <div class="time-container">
+                                    <span class="current-time">
+                                      <span class="amplitude-current-minutes" amplitude-main-current-minutes="true"></span>:<span class="amplitude-current-seconds" amplitude-main-current-seconds="true"></span>
+                                    </span>
+                                    <span class="duration">
+                                      <span class="amplitude-duration-minutes" amplitude-main-duration-minutes="true"></span>:<span class="amplitude-duration-seconds" amplitude-main-duration-seconds="true"></span>
+                                    </span>
+                                  </div>
+                                  <div class="control-container">
+                                    <div class="amplitude-play-pause" amplitude-main-play-pause="true" id="play-pause"></div>
+                                  </div>
+                                  <div class="meta-container">
+                                    <span amplitude-song-info="name" amplitude-main-song-info="true" class="song-name"></span>
+                                    <span amplitude-song-info="artist" amplitude-main-song-info="true"></span>
+                                  </div>
+                              </div>
                         </div>
                     </div>
                 </div>
@@ -107,11 +129,78 @@
             </div>
         </section>
 
+        <!-- Include Amplitude JS -->
+        <script type="text/javascript" src="js/amplitude.js"></script>
+
+
+        <script>
+            Amplitude.init({
+              songs: [
+                {
+                  "name": "BTG",
+                  "artist": "toenay",
+                  "album": "sketches",
+                  "url": "/songs/BTG.mp3",
+                  //"cover_art_url": "../album-art/we-are-to-answer.jpg"
+                },
+                {
+                  "name": "BTG",
+                  "artist": "toenay",
+                  "album": "sketches",
+                  "url": "/songs/BTG.mp3",
+                  //"cover_art_url": "../album-art/we-are-to-answer.jpg"
+                },{
+                  "name": "BTG",
+                  "artist": "toenay",
+                  "album": "sketches",
+                  "url": "/songs/BTG.mp3",
+                  //"cover_art_url": "../album-art/we-are-to-answer.jpg"
+                },{
+                  "name": "BTG",
+                  "artist": "toenay",
+                  "album": "sketches",
+                  "url": "/songs/BTG.mp3",
+                  //"cover_art_url": "../album-art/we-are-to-answer.jpg"
+                },{
+                  "name": "BTG",
+                  "artist": "toenay",
+                  "album": "sketches",
+                  "url": "/songs/BTG.mp3",
+                  //"cover_art_url": "../album-art/we-are-to-answer.jpg"
+                },{
+                  "name": "BTG",
+                  "artist": "toenay",
+                  "album": "sketches",
+                  "url": "/songs/BTG.mp3",
+                  //"cover_art_url": "../album-art/we-are-to-answer.jpg"
+                },{
+                  "name": "BTG",
+                  "artist": "toenay",
+                  "album": "sketches",
+                  "url": "/songs/BTG.mp3",
+                  //"cover_art_url": "../album-art/we-are-to-answer.jpg"
+                },
+              ],
+
+
+              playlists: {
+                "sketches": {
+                  songs: [0, 1, 2, 3, 4, 5],
+                  title: 'sketches'
+                },
+                "hopeithelps": {
+                  songs: [6],
+                  title: 'Emancipator\'s Greatest Hits'
+                }
+              }
+            });
+    </script>
 
 
 
         <!--(bake modules/footer.html)-->
 
         <!--(bake modules/footer-tags.html)-->
+
     </body>
 </html>

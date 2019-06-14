@@ -27,10 +27,6 @@
         <meta property="og:site_name" content="{{pageTitle}}">
         <meta property="og:locale" content="en_GB">
 
-
-        <style>* { padding: 0; margin: 0; } canvas { background: #D0D0D0; display: block; margin: 0 auto; }</style>
-
-
         <meta name="robots" content="index,follow,noodp">
         <meta name="googlebot" content="index,follow">
 
@@ -41,4 +37,26 @@
         <![endif]-->
 
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+
+        <style>
+          div.amplitude-play-pause {
+          width: 74px;
+          height: 74px;
+          cursor: pointer;
+          float: left;
+          margin-left: 10px;
+          }
+
+          div.amplitude-play-pause.amplitude-paused {
+          background: url('../img/play.svg');
+          background-size: cover;
+          }
+
+          div.amplitude-play-pause.amplitude-playing {
+          background: url('../img/pause.svg');
+          background-size: cover;
+          }
+        </style>
+
+
     </head>
