@@ -1,5 +1,6 @@
 .section {
     padding: 70px 0;
+    background-image: linear-gradient(-173deg, #ffdbdb 2%, #b64000 100%);
 
 
 
@@ -27,7 +28,6 @@
 
     &__info {
         padding: 40px 0;
-        background-image: linear-gradient(187deg, #b64000 2%, #ffdbdb 100%);
 
         &--np {
             padding: 0;
