@@ -75,7 +75,7 @@ module.exports = function( grunt ) {
             },
         },
 
-        // Sync Images & Fonts
+        // Sync Images & Fonts & songs
         sync: {
             main: {
                 files: [
@@ -83,6 +83,11 @@ module.exports = function( grunt ) {
                         cwd: 'build/img',
                         src: ['**'],
                         dest: 'dist/img'
+                    },
+                    {
+                        cwd: 'build/songs',
+                        src: ['**'],
+                        dest: 'dist/songs'
                     },
                     {
                         cwd: 'build/fonts',
@@ -112,6 +117,7 @@ module.exports = function( grunt ) {
             sync: {
                 files: [
                     'build/img/**',
+                    'build/songs/**',
                     'build/fonts/**'
                 ],
                 tasks:['sync']
